@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    overflow-x: hidden;
+}
+
+:root {
+    --main-text-color: #5546C5;
+    --main-text-hover:#695dc9;
+    --main-text-opacity: rgba(85, 70, 197, 0.154);
+    --main-text-font: Eurostile;
+    --second-text-font: EuropaNuova-Regular;
+
+    --second-text-color: #6c757d;
+    --bg-color: #0A0A0A;
+
+    --circle-size: 80px;
+    --hover-button-text: white;
+
+    --i-social-media: #251D60;
+}
+
+#body-home {
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#main-text {
+    font-family: EuropaNuova;
+    color: var(--main-text-color);
+}
+
+#btn {
+    color: var(--main-text-color);
+    margin-top: 2em;
+    padding: .40em;
+    background: none;
+    font-size: 1.1em;
+
+    border: 1.7px solid var(--main-text-color);
+    border-radius: 2em;
+
+    transition: 200ms;
+    cursor: pointer;
+}
+
+#btn a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-family: europanuova;
+    font-weight: 100;
+}
+
+#btn:hover, #btn a:hover, #btn:focus, #btn a:focus {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1200px) {
+    #section-home {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #btn {
+        width: 50% !important;
+    }
+
+    /* RIGHT PART */
+    #article-home {
+        display: none;
+    }
+}
+
+/* PROYECTS WITH BOOTSTRAP */
+
+#navbar-proyects a { 
+    transition: 150ms;
+}
+
+#navbar-proyects a:hover {
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+#body-proyects {
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+#section-proyects {
+    color: var(--main-text-color);
+}
+
+#anchor {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-family: europanuova;
+    transition: 200ms;
+}
+
+#anchor:hover {
+    color: var(--main-text-hover);
+    text-decoration: underline !important;
+}
+
+@media screen and (min-width:768px) {
+    .display-none {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px ){
+    .display-none {
+        display: inline-block;
+    }
+}
