@@ -76,17 +76,43 @@
         display: none;
     }
 }
-
-/* PROYECTS WITH BOOTSTRAP */
-
-#navbar-proyects a { 
-    transition: 150ms;
+/* NAVBAR GENERAL */
+.navbar {
+    font-family: europanuova;
 }
 
-#navbar-proyects a:hover {
-    font-size: 17px;
-    text-decoration: underline;
+.navbar a { 
+    transition: 300ms;
 }
+
+.navbar a:hover {
+    font-size: 16.5px;
+    color: rgb(159, 159, 159) !important;
+}
+
+/* SERVICES, ABOUT AND LANGUAJES */
+#body-services {
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROYECTS */
 
 #body-proyects {
     height: 100vh;
@@ -97,6 +123,7 @@
     color: var(--main-text-color);
 }
 
+/* LETRAS MORADAS DE LAS CARDS */
 #anchor {
     text-decoration: none;
     color: var(--main-text-color);
@@ -106,7 +133,6 @@
 
 #anchor:hover {
     color: var(--main-text-hover);
-    text-decoration: underline !important;
 }
 
 @media screen and (min-width:768px) {
@@ -117,6 +143,6 @@
 
 @media screen and (min-width: 1200px ){
     .display-none {
-        display: inline-block;
+        display: inline;
     }
 }
