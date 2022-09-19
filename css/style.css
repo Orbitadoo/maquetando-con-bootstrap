@@ -5,6 +5,15 @@
     overflow-x: hidden;
 }
 
+h1 {
+    font-family: var(--main-text-font);
+    color: var(--main-text-color);
+}
+
+p {
+    font-family: var(--second-text-font);
+}
+
 :root {
     --main-text-color: #5546C5;
     --main-text-hover:#695dc9;
@@ -90,16 +99,28 @@
     color: rgb(159, 159, 159) !important;
 }
 
+.navbar-toggler.collapsed {
+    background-color: var(--second-text-color) !important;
+}
+
 /* SERVICES, ABOUT AND LANGUAJES */
 #body-services {
     height: 100vh;
     background-color: var(--bg-color);
 }
 
+#main-services {
+    height: 90%;    
+}
 
-
-
-
+.icon {
+    font-size: 5em;
+    border-radius: 9px;
+    margin: 0.1em;
+    margin-left: 0;
+    padding: 0.15em;
+    background-color: var(--second-text-color);
+}
 
 
 
