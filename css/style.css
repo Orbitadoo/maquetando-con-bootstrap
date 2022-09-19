@@ -99,8 +99,8 @@ p {
     color: rgb(159, 159, 159) !important;
 }
 
-.navbar-toggler.collapsed {
-    background-color: var(--second-text-color) !important;
+.navbar-toggler {
+    background-color: var(--main-text-color) !important;
 }
 
 /* SERVICES, ABOUT AND LANGUAJES */
@@ -122,16 +122,9 @@ p {
     background-color: var(--second-text-color);
 }
 
-
-
-
-
-
-
-
-
-
-
+#border-facepic {
+    border: 10px solid var(--main-text-color);
+}
 
 /* PROYECTS */
 
@@ -166,4 +159,22 @@ p {
     .display-none {
         display: inline;
     }
+}
+
+/* SECCION DE CONTACTO */
+#body-contacto {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+#main-contacto {
+    height: 90%;
+}
+
+.icons-contact {
+    font-size: 3em;
+    color: var(--main-text-color);
+    background-color: var(--i-social-media);
+    padding: 1em;
+    width: 200px;
 }
