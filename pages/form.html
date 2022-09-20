@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Portfolio Bootstrap</title>
 </head>
-<body>
+<body id="body-form">
     <header id="header-form">
         <nav id="navbar-form" class="navbar navbar-expand-lg text-bg-dark bg-opacity-10">
             <div class="container-fluid">
@@ -40,5 +40,29 @@
             </div>
         </nav>
     </header>
+    
+    <main id="main-form" class="d-flex flex-column justify-content-center">
+      <section id="section-form">
+        <h1 class="text-center">¿Quieres enviarme un mensaje?</h1>
+      </section>
+      <article id="article-form" class="d-flex justify-content-center">
+        <form action="#">
+          <label for="label_nombre">
+              <span class="labels-h fs-5">Nombre</span> <br>
+              <input id="label_nombre" class="mt-2 label-style rounded ps-2 pe-5 py-2 bg-black bg-opacity-10" type="text" name="label_nombre"  placeholder="Juan Pablo">
+          </label>
+          <br>
+          
+          <label for="label_textarea">
+              <span class="labels-h fs-5">Escribe un mensaje aquí</span> <br>
+              <textarea class="mt-2 label-style rounded ps-2 pe-5 py-2 bg-black bg-opacity-10" name="textarea" rows="8" cols="22" placeholder="Me gustaría contratarte!"></textarea>
+          </label>
+
+          <br>
+          <label for="label_submit" class="float-end">
+              <input class="enviar px-4" type="submit" value="Enviar">
+          </label>
+      </article>
+    </main>
 </body>
 </html>
